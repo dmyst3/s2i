@@ -25,6 +25,7 @@ COPY s2i/bin/ /usr/local/s2i
 #CMD /opt/mule/bin/mule
 
 #COPY api/muleopenshiftmock-1.0.0-SNAPSHOT.zip /opt/mule/apps
+USER 1001
 
 # Default http port
 EXPOSE 8081
