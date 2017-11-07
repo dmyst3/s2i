@@ -8,4 +8,5 @@
 #
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/. ./
+#cp -Rf /tmp/src/. ./
+cp -Rf /tmp/src/Deployments/muleopenshiftmock-1.0.0-SNAPSHOT.zip /opt/mule/apps
