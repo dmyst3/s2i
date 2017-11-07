@@ -4,7 +4,7 @@ MAINTAINER Ahmad Bacchus <ABacchus@healthfirst.org>
 
 ENV MULE_RUNTIME_VERSION 3.9.0
 ENV MULE_HOME /opt/mule
-ENV JAVA_APP_DIR=/deployments
+ENV JAVA_APP_DIR=deployments
 
 LABEL io.k8s.description="Platform for serving Mulesoft apis" \
       io.k8s.display-name="Mulesoft CE 3.9.0" \
@@ -12,7 +12,7 @@ LABEL io.k8s.description="Platform for serving Mulesoft apis" \
       io.openshift.tags="mulesoft" \
       io.openshift.s2i.scripts-url=image:///usr/local/s2i
 
-#RUN chown -R 1001:0 /root
+#RUN  chown -R 1001:0 /home/jboss
 USER root
 
 ADD https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/distributions/mule-standalone/${MULE_RUNTIME_VERSION}/mule-standalone-${MULE_RUNTIME_VERSION}.zip /home/jboss
