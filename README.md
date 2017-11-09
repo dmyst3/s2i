@@ -2,7 +2,7 @@
                https://github.com/dmyst3/s2i
 
 2.	Run the following commands to create a new build from the above repo
-oc new-build http://git.apps.e1.hf.rht-labs.com/abacchus/mulesoft
+oc new-build https://github.com/dmyst3/s2i
 3.	Run the following command below to create another build for the app
 
                oc new-build -i mulesoft --name=mule-app --binary=true
